@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    img {
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card instructions">
+                    <div class="card-header card-info mb-3 text-center">
+                        <h1 style="color:white">Crystal Game</h1>
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">Crystal Game</h4>
+                        <p class="card-text">You will be given a random number at the start of the game.
+                            <br>There are four crystals below. By clicking on a crystal, you will add a specific amount of points
+                            to your total score.
+                            <br> You win the game by matching your total score to the randomly generated number, and you lose
+                            the game if your total score goes above the random number.
+                            <br>The value of each crystal is hidden from you until you click on it.
+                            <br>Each time the game starts, the value of the crystal and the target score will change.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header text-center bg-dark"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <h4 class="card-title">Wins</h4>
+                                <h1 class="wins"></h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <h4 class="card-title">Losses</h4>
+                                <h1 class="losses"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header text-center"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <h4 class="card-title">Current Number</h4>
+                                <h1 class="currentNumbers"></h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <h4 class="card-title">Target Number</h4>
+                                <h1 class="targetNumber"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card crystals">
+            <div class="card-block">
+                <h4 class="card-title">Crystals</h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <button id="crystalA">
+                            <img src="images/testa.jpg" />
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button id="crystalB">
+                            <img src="images/testb.jpg" />
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button id="crystalC">
+                            <img src="images/testc.jpeg" />
+                        </button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button id="crystalD">
+                            <img src="images/testd.jpeg" />
+                        </button>
+                    </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="game.js"></script>
+
+</html>
